@@ -34,7 +34,7 @@ for name in files:
                         # print(old)
                         f.seek(0) 
                         new = old.split()
-                        new[0] = str(v+1)
+                        new[0] = str(v)
                         if len(new) > 5:
                             new = [sub.replace(most_appear(new), str(v)) for sub in new]
                         f.write(' '.join(new))
